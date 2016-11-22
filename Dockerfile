@@ -7,7 +7,7 @@ RUN apt-get -y install build-essential zlib1g-dev ruby-dev ruby nodejs \
     && rm -rf /var/lib/apt/lists/
 
 RUN gem update --system
-RUN gem install github-pages -v 86
+RUN gem install github-pages -v 105
 
 VOLUME /site
 
