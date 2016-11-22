@@ -1,8 +1,8 @@
 FROM ubuntu:15.04
 MAINTAINER Nick Jones <nick@nicksays.co.uk>
 
-RUN apt-get update
-RUN apt-get -y install build-essential zlib1g-dev ruby-dev ruby nodejs \
+RUN apt-get update \
+    && apt-get -y install build-essential zlib1g-dev ruby-dev ruby nodejs \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/
 
