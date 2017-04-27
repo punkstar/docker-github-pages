@@ -7,7 +7,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/
 
 RUN gem update --system
-RUN gem install github-pages -v 105
+RUN gem install github-pages -v 134
 
 VOLUME /site
 
